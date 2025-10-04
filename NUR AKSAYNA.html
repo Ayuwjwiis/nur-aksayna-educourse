@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transformasi Sampah Jadi Pupuk, Langkah Hijau Kita</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e6f2e6;
+      margin: 0;
+      padding: 0 20px;
+      color: #2e7d32;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      width: 100%;
+      padding: 25px 0;
+      color: white;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+      border-radius: 0 0 15px 15px;
+    }
+
+    main {
+      max-width: 700px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(46,125,50,0.2);
+    }
+
+    h2, h3 {
+      margin-top: 0;
+      color: #1b5e20;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 25px;
+    }
+
+    button {
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.05em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    button:hover {
+      background-color: #2e7d32;
+    }
+
+    #steps {
+      display: none;
+      background: #c8e6c9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: inset 0 0 12px #2e7d32;
+      font-size: 1.05em;
+      color: #1b5e20;
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    .kalkulator {
+      background-color: #f1f8e9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .kalkulator label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .kalkulator input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    .kalkulator p {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>Transformasi Sampah Jadi Pupuk, Langkah Hijau Kita</header>
+  <main>
+    <img
+      src="https://tse2.mm.bing.net/th/id/OIP.Kr_bYSN3Hgd8s7xC1vNHqAHaFB?pid=Api&P=0&h=220"
+      alt="Pupuk Organik dari Sampah"
+    />
+    <h2>Apa itu Transformasi Sampah Jadi Pupuk?</h2>
+    <p>
+      Transformasi sampah jadi pupuk adalah proses mengolah sampah organik rumah tangga seperti sisa sayuran, kulit buah, dan daun menjadi pupuk kompos yang berguna untuk menyuburkan tanaman dan menjaga kesuburan tanah secara alami.
+    </p>
+
+    <h2>Manfaat Mengolah Sampah Jadi Pupuk</h2>
+    <ul>
+      <li>Mengurangi volume sampah yang dibuang ke tempat pembuangan akhir.</li>
+      <li>Menghasilkan pupuk alami yang ramah lingkungan dan ekonomis.</li>
+      <li>Mendukung pertumbuhan tanaman yang sehat dan subur.</li>
+      <li>Mengurangi penggunaan pupuk kimia yang berbahaya.</li>
+    </ul>
+
+    <button id="showStepsBtn">Tampilkan Langkah Membuat Pupuk</button>
+
+    <div id="steps">
+      <h3>Langkah-langkah Membuat Pupuk Kompos</h3>
+      <ol>
+        <li>Siapkan tempat pengomposan, bisa menggunakan drum atau kotak kayu.</li>
+        <li>Masukkan sampah organik seperti sisa sayuran, daun kering, dan serbuk gergaji.</li>
+        <li>Tambahkan air secukupnya agar bahan tetap lembap tapi tidak basah kuyup.</li>
+        <li>Aduk secara berkala untuk mempercepat proses penguraian.</li>
+        <li>Biarkan selama 4–6 minggu sampai bahan berubah menjadi kompos gelap dan harum.</li>
+        <li>Pupuk kompos siap digunakan untuk menyuburkan tanaman.</li>
+      </ol>
+    </div>
+
+    <!-- Kalkulator Harga Sampah -->
+    <div class="kalkulator">
+      <h3>Kalkulator Harga Sampah Organik</h3>
+      <label for="berat">Berat Sampah (kg):</label>
+      <input type="number" id="berat" placeholder="Contoh: 2.5" step="0.1" min="0" />
+
+      <label for="harga">Harga per Kilo (Rp):</label>
+      <input type="number" id="harga" placeholder="Contoh: 3000" min="0" />
+
+      <button onclick="hitungTotal()">Hitung Total Harga</button>
+      <p id="hasilTotal"></p>
+    </div>
+  </main>
+
+  <script>
+    // Tampilkan/sembunyikan langkah
+    const btn = document.getElementById('showStepsBtn');
+    const steps = document.getElementById('steps');
+
+    btn.addEventListener('click', () => {
+      if (steps.style.display === 'none' || steps.style.display === '') {
+        steps.style.display = 'block';
+        btn.textContent = 'Sembunyikan Langkah Membuat Pupuk';
+      } else {
+        steps.style.display = 'none';
+        btn.textContent = 'Tampilkan Langkah Membuat Pupuk';
+      }
+    });
+
+    // Kalkulator Harga Sampah
+    function hitungTotal() {
+      const berat = parseFloat(document.getElementById('berat').value);
+      const harga = parseFloat(document.getElementById('harga').value);
+      const hasil = document.getElementById('hasilTotal');
+      if (isNaN(berat) || isNaN(harga)) {
+        hasil.style.color = 'red';
+        hasil.textContent = 'Masukkan berat dan harga yang valid.';
+      } else {
+        const total = berat * harga;
+        hasil.style.color = '#1b5e20';
+        hasil.textContent = `Total Harga: Rp ${total.toLocaleString('id-ID')}`;
+      }
+    }
+  </script>
+</body>
+</html>
